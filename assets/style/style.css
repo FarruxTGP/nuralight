@@ -312,6 +312,7 @@ h1 {
 }
 .head {
   padding: 80px 100px;
+  padding-bottom: 0px;
 }
 .sliders .head {
   display: grid;
@@ -374,8 +375,8 @@ h1 {
 
 .fadeInBottom {
   animation-name: fadeInBottom;
-  -webkit-animation-duration: .4s;
-  animation-duration: .4s;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -387,4 +388,215 @@ h1 {
   to {
     opacity: 1;
   }
+}
+.grids .post {
+  width: 100%;
+  max-width: 240px;
+}
+
+.grids .post p {
+  font-family: sans-serif;
+}
+.grids img {
+  width: 100%;
+}
+.news .head {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  justify-content: space-between;
+}
+.news .head .grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  height: 520px;
+  overflow-y: scroll;
+}
+
+.news .head .grids .txt p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #363333;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(213, 213, 213);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #165095;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.indiks > div {
+  position: absolute;
+  text-align: center;
+  z-index: 4;
+  transition: 0.7s;
+}
+
+.indiks > div > img {
+  position: relative;
+  right: -50px;
+}
+
+.indiks > div:nth-child(1) {
+    left: 370px;
+    top: 120px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(2) {
+    left: 350px;
+    top: 120px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(3) {
+    left: 400px;
+    top: 120px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(4) {
+  left: 965px;
+  top: 363px;
+  height: 0px;
+  overflow: hidden;
+  left: 470px;
+  top: 140px;
+}
+
+.indiks > div:nth-child(5) {
+  
+  height: 0px;
+  overflow: hidden;
+  left: 420px;
+  top: 170px;
+}
+
+.indiks > div:nth-child(6) {
+    left: 320px;
+    top: 170px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(7) {
+    left: 295px;
+    top: 140px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(8) {
+    left: 195px;
+    top: 179px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(9) {
+    left: 155px;
+    top: 223px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(10) {
+  left: 265px;
+  top: 243px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(11) {
+  left: 105px;
+  top: 3px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(12) {
+  left: 2px;
+  top: 103px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(13) {
+  left: 105px;
+  top: 153px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks > div:nth-child(14) {
+  left: -200px;
+  top: -0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.indiks .active {
+  /* width: 165px; */
+  height: 165px !important;
+  /* overflow: visible !important; */
+}
+
+.indiks h2 {
+  color: #0c86d1;
+}
+.map .map{
+   
+}
+.map svg{
+    width: 100%;
+    max-width: 697px;
+}
+.mapic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.mapic .head{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    justify-content: space-between;
+}
+svg path:hover{
+    fill-opacity: 1 !important;
+}
+.footer .head{
+    display: flex;
+    justify-content: space-between;
+    
+}.footer .head *{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer .col:nth-child(2){
+    row-gap: 40px;
+    opacity: .7;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }

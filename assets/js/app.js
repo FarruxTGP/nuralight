@@ -34,6 +34,29 @@ document.getElementById("showSlide").onclick = function(){
 }
 
 
+
+document.getElementById("showNews").onclick = function(){
+    contents.forEach( (item)=>{
+        item.style.display = "none"
+    } )
+    document.querySelector(".content>.news").style.display = "flex"
+}
+document.getElementById("showMap").onclick = function(){
+    contents.forEach( (item)=>{
+        item.style.display = "none"
+    } )
+    document.querySelector(".content>.mapic").style.display = "flex"
+}
+
+
+document.getElementById("showTop").onclick = function(){
+    contents.forEach( (item)=>{
+        item.style.display = "none"
+    } )
+    document.querySelector(".content>.brend").style.display = "flex"
+}
+
+
 document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '.slide-1', {
         type   : 'loop',
@@ -72,3 +95,13 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 	} ).mount();
 } );
+
+const path = document.querySelectorAll("svg path")
+path.forEach((item)=>{
+  item.onmousemove = function(){
+    document.querySelector(item.getAttribute('data-ser')).classList.add("active")
+  }
+  item.onmouseleave = function(){
+    document.querySelector(item.getAttribute('data-ser')).classList.remove("active")
+}
+})
