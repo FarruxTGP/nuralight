@@ -56,6 +56,12 @@ document.getElementById("showTop").onclick = function(){
     document.querySelector(".content>.brend").style.display = "flex"
 }
 
+document.getElementById("showFoot").onclick = function(){
+    contents.forEach( (item)=>{
+        item.style.display = "none"
+    } )
+    document.querySelector(".content>.footer").style.display = "flex"
+}
 
 document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '.slide-1', {
