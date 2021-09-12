@@ -1,79 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    outline: none;
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
 }
 
-
-body{
-    overflow: hidden;
-    scroll-behavior: smooth !important;
+body {
+  overflow: hidden;
+  scroll-behavior: smooth !important;
 }
 
-
-.wrapper{
-    width: 100%;
+.wrapper {
+  width: 100%;
 }
 
-
-.container{
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
-    background-image: url('../images/bg.svg');
-    background-color:  #165095;
-    background-repeat: no-repeat;
-    background-size: cover;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url("../images/bg.svg");
+  background-color: #165095;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.navbar{
-    width: 1260px;
-    margin: 0 auto;
-    padding-top: 61px;
+.navbar {
+  width: 1260px;
+  margin: 0 auto;
+  padding-top: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.phone_number {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.load_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 1140px;
+  height: 750px;
+  max-height: 750px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0px 100px;
+  padding-top: 90px;
+}
+.brend h1 {
+  color: #3c79bf;
+  font-size: 36px;
+}
+.brend .head {
+  display: flex;
+  justify-content: space-between;
+}
+.brend p {
+  font-size: 24px;
+  color: #165095;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+}
+.brend p span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4f1ff;
+  color: #165095;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.brend ul li {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  column-gap: 35px;
+}
+.brend ul li hr {
+  width: 50px;
+  height: 0px;
+  border: 1px solid #9d9d9d;
+}
+.brend ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin: 25px 0px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.brend .col img{
+    width: 90px;
+}
+.brend .foot{
     display: flex;
     justify-content: space-between;
-    align-items:center;
-}
-
-.menu{
-    width: 530px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
-.menu li a{
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.5px;
-color: #FFFFFF;
-}
-
-.phone_number{
-font-family: 'Work Sans', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 36px;
-color: #FFFFFF;
-}
-
-.load_icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-}
-
-
