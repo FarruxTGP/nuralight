@@ -79,9 +79,9 @@ body {
 .content {
   width: 100%;
   max-width: 1140px;
-  height: 750px;
+  height: 80vh;
   max-height: 750px;
-  background-color: #fff;
+  background-color: transparent;
   position: fixed;
   bottom: 0px;
   left: 50%;
@@ -96,7 +96,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 0px 100px;
-  padding-top: 90px;
+  padding-top: 80px;
 }
 .brend p {
   font-size: 16px;
@@ -155,6 +155,8 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
+  background-color: #fff;
+  min-width: 1140px;
 }
 
 .onas .head {
@@ -168,7 +170,6 @@ h1 {
   background-repeat: no-repeat;
   background-color: #f9fcff;
   height: 100%;
-  padding-bottom: 80px;
 }
 
 .onas .head h1 {
@@ -206,11 +207,11 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  min-width: 1140px;
 }
 
 .chisla .head {
   padding: 90px 100px;
-  padding-bottom: 30px;
 }
 
 .chisla .head h1 {
@@ -259,6 +260,12 @@ h1 {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  background-color: #fff;
+  min-width: 1140px;
+}
+
+.group{
+  background-color: #fff;
 }
 
 .group .head {
@@ -266,6 +273,7 @@ h1 {
   background-color: #f9fcff;
   display: grid;
   grid-template-columns: 40% 55%;
+  padding-bottom: 0px;
 }
 .card {
   position: relative;
@@ -313,6 +321,10 @@ h1 {
 .head {
   padding: 80px 100px;
   padding-bottom: 0px;
+}
+
+.sliders{
+  background-color: #fff;
 }
 .sliders .head {
   display: grid;
@@ -400,6 +412,10 @@ h1 {
 .grids img {
   width: 100%;
 }
+
+.news{
+  background-color: #fff;
+}
 .news .head {
   display: grid;
   grid-template-columns: 30% 65%;
@@ -438,6 +454,7 @@ h1 {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  min-width: 1140px;
 }
 
 .indiks > div {
@@ -562,8 +579,8 @@ h1 {
 .indiks h2 {
   color: #0c86d1;
 }
-.map .map{
-   
+.map{
+   background-color: #fff;
 }
 .map svg{
     width: 100%;
@@ -574,6 +591,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    min-width: 1140px;
 }
 .mapic .head{
     display: grid;
@@ -599,4 +617,100 @@ svg path:hover{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    background-color: #fff;
+}
+
+
+
+
+.header_wrapper{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.top_header{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+
+
+
+.slider_btn{
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider_btn a{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count{
+  width: 150px;
+ 
+}
+
+.count h3{
+  font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 72px;
+color: #FFFFFF;
+}
+
+.count img{
+  margin-left: 
+  1rem;
+}
+
+.header_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 750px;
+  height:140px;
+  margin: 0 auto;
+  position: relative;
+  top: -15rem;
+}
+
+.header_text h1{
+  font-style: normal;
+font-weight: 600;
+font-size: 54px;
+line-height: 72px;
+/* or 133% */
+
+
+color: #FFFFFF;
+
+}
+
+.header_text p{
+  font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+margin-top: 4rem;
+color: #FFFFFF;
+padding-left: 1.5rem;
 }
